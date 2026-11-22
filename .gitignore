@@ -67,3 +67,21 @@ tools/ollama/
 # ==========================================
 wheelhouse/
 wheels/
+
+# ==========================================
+# INCLUDE BUNDLED OLLAMA RUNTIME
+# Managed by Git LFS
+# ==========================================
+!tools/ollama/
+!tools/ollama/**
+!tools/ollama/models/
+!tools/ollama/models/**
+!tools/ollama/**/*.gguf
+
+# Exclude generated Ollama runtime logs
+/tools/ollama/*.log
+/tools/ollama/**/*.log
+
+# NVIDIA CUDA libraries withheld pending redistribution review
+/tools/ollama/lib/ollama/cuda_v12/
+/tools/ollama/lib/ollama/cuda_v13/
